@@ -58,7 +58,7 @@ namespace Tarea_con_colores_5
         private void button1_Click(object sender, EventArgs e)
         {
             cn.Open();
-            string insertar = "INSERT INTO empleado (ID,NOMBRES,APELLIDOS,CELULAR,CORREO,SEXO,FECHA_DE_NACIMIENTO)values(@id,@nombres,@apellidos,@celular,@correo,@sexo,@fecha_de_nacimiento)";
+            string insertar = "INSERT INTO empleado (ID,NOMBRES,APELLIDOS,CELULAR,CORREO,SEXO,FECHA_DE_NACIMIENTO,CARGO)values(@id,@nombres,@apellidos,@celular,@correo,@sexo,@fecha_de_nacimiento,@cargo)";
             MySqlCommand cmd = new MySqlCommand(insertar, cn);
 
             cmd.Parameters.AddWithValue("@id", textBox1.Text);
@@ -68,31 +68,38 @@ namespace Tarea_con_colores_5
             cmd.Parameters.AddWithValue("@correo", textBox5.Text);
             cmd.Parameters.AddWithValue("@sexo", comboBox2.Text);
             cmd.Parameters.AddWithValue("@fecha_de_nacimiento", textBox7.Text);
+            cmd.Parameters.AddWithValue("@cargo", comboBox1.Text);
             cmd.ExecuteNonQuery();
 
             cn.Close();
-            MessageBox.Show("El usuario ah sido agregado con exito");
+            MessageBox.Show("El empleado ah sido agregado con exito");
             dataGridView1.DataSource = llenar_grid();
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            cn.Open();
-            string actualizar = "UPDATE empleado SET ID=@id,NOMBRES=@nombres,APELLIDOS=@apellidos,CELULAR=@celular,CORREO=@correo,SEXO=@sexo,FECHA_DE_NACIMIENTO=@fecha_de_nacimiento WHERE ID=@id";
-            MySqlCommand cmd = new MySqlCommand(actualizar, cn);
-
-            cmd.Parameters.AddWithValue("@id", textBox1.Text);
-            cmd.Parameters.AddWithValue("@nombres", textBox2.Text);
-            cmd.Parameters.AddWithValue("@apellidos", textBox3.Text);
-            cmd.Parameters.AddWithValue("@celular", textBox4.Text);
-            cmd.Parameters.AddWithValue("@correo", textBox5.Text);
-            cmd.Parameters.AddWithValue("@sexo", comboBox2.Text);
-            cmd.Parameters.AddWithValue("@fecha_de_nacimiento", textBox7.Text);
-            cmd.ExecuteNonQuery();
-
-            cn.Close();
-            MessageBox.Show("El usuario ah sido modificado con exito");
-            dataGridView1.DataSource = llenar_grid();
+            textBox1.Enabled = true;
+            textBox2.Enabled = true;
+            textBox3.Enabled = true;
+            textBox4.Enabled = true;
+            textBox5.Enabled = true;
+            textBox7.Enabled = true;
+            comboBox2.Enabled = true;
+            comboBox1.Enabled = true;
+            textBox1.Text = "";
+            textBox2.Text = "";
+            textBox3.Text = "";
+            textBox4.Text = "";
+            textBox5.Text = "";
+            textBox7.Text = "";
+            comboBox2.Text = "Seleccione el sexo";
+            comboBox1.Text = "Seleccione el cargo";
+            textBox1.Focus();
+            button5.Visible = false;
+            button1.Visible = false;
+            button6.Visible = false;
+            button7.Visible = false;
+            
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -129,12 +136,24 @@ namespace Tarea_con_colores_5
         {
             textBox1.Enabled = true;
             textBox2.Enabled = true;
+            textBox3.Enabled = true;
+            textBox4.Enabled = true;
+            textBox5.Enabled = true;
+            textBox7.Enabled = true;
             comboBox2.Enabled = true;
+            comboBox1.Enabled = true;
             textBox1.Text = "";
             textBox2.Text = "";
-            comboBox2.Text = "Seleccione nivel";
+            textBox3.Text = "";
+            textBox4.Text = "";
+            textBox5.Text = "";
+            textBox7.Text = "";
+            comboBox2.Text = "Seleccione el sexo";
+            comboBox1.Text = "Seleccione el cargo";
             textBox1.Focus();
             button5.Visible = false;
+            button9.Visible = false;
+            button7.Visible = false;
             button1.Visible = true;
             button8.Visible = true;
         }
@@ -195,6 +214,27 @@ namespace Tarea_con_colores_5
                 MessageBox.Show(k.ToString());
 
             }
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            cn.Open();
+            string actualizar = "UPDATE empleado SET ID=@id,NOMBRES=@nombres,APELLIDOS=@apellidos,CELULAR=@celular,CORREO=@correo,SEXO=@sexo,FECHA_DE_NACIMIENTO=@fecha_de_nacimiento,CARGO=@cargo WHERE ID=@id";
+            MySqlCommand cmd = new MySqlCommand(actualizar, cn);
+
+            cmd.Parameters.AddWithValue("@id", textBox1.Text);
+            cmd.Parameters.AddWithValue("@nombres", textBox2.Text);
+            cmd.Parameters.AddWithValue("@apellidos", textBox3.Text);
+            cmd.Parameters.AddWithValue("@celular", textBox4.Text);
+            cmd.Parameters.AddWithValue("@correo", textBox5.Text);
+            cmd.Parameters.AddWithValue("@sexo", comboBox2.Text);
+            cmd.Parameters.AddWithValue("@fecha_de_nacimiento", textBox7.Text);
+            cmd.Parameters.AddWithValue("@cargo", comboBox1.Text);
+            cmd.ExecuteNonQuery();
+
+            cn.Close();
+            MessageBox.Show("El empleado ah sido modificado con exito");
+            dataGridView1.DataSource = llenar_grid();
         }
     }
 }
