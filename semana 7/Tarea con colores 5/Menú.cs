@@ -111,6 +111,12 @@ namespace Tarea_con_colores_5
         {
 
         }
+
+        private void empleadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form fempleados = new fempleados();
+            fempleados.Show();
+        }
     }
     }
 

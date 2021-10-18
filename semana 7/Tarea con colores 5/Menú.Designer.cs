@@ -33,6 +33,7 @@ namespace Tarea_con_colores_5
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.formulariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.formularioDeVentasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.empleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.computadorasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.computadorasDisponiblesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.laptopsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -70,7 +71,8 @@ namespace Tarea_con_colores_5
             // formulariosToolStripMenuItem
             // 
             this.formulariosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.formularioDeVentasToolStripMenuItem});
+            this.formularioDeVentasToolStripMenuItem,
+            this.empleadosToolStripMenuItem});
             this.formulariosToolStripMenuItem.Name = "formulariosToolStripMenuItem";
             this.formulariosToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
             this.formulariosToolStripMenuItem.Text = "Formularios";
@@ -81,6 +83,13 @@ namespace Tarea_con_colores_5
             this.formularioDeVentasToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
             this.formularioDeVentasToolStripMenuItem.Text = "Formulario de Ventas";
             this.formularioDeVentasToolStripMenuItem.Click += new System.EventHandler(this.formularioDeVentasToolStripMenuItem_Click);
+            // 
+            // empleadosToolStripMenuItem
+            // 
+            this.empleadosToolStripMenuItem.Name = "empleadosToolStripMenuItem";
+            this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.empleadosToolStripMenuItem.Text = "Empleados";
+            this.empleadosToolStripMenuItem.Click += new System.EventHandler(this.empleadosToolStripMenuItem_Click);
             // 
             // computadorasToolStripMenuItem1
             // 
@@ -211,5 +220,6 @@ namespace Tarea_con_colores_5
         private System.Windows.Forms.ToolStripMenuItem laptopsToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem celularesDisponiblesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem computadorasDisponiblesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem empleadosToolStripMenuItem;
     }
 }

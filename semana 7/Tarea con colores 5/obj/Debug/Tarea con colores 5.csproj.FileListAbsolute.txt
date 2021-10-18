@@ -431,3 +431,31 @@ C:\Users\Jose Lobos\Source\Repos\Registro-MYSQL\semana 7\Tarea con colores 5\obj
 C:\Users\Jose Lobos\Source\Repos\Registro-MYSQL\semana 7\Tarea con colores 5\obj\Debug\Tarea con colores 5.csproj.CopyComplete
 C:\Users\Jose Lobos\Source\Repos\Registro-MYSQL\semana 7\Tarea con colores 5\obj\Debug\Tarea con colores 5.exe
 C:\Users\Jose Lobos\Source\Repos\Registro-MYSQL\semana 7\Tarea con colores 5\obj\Debug\Tarea con colores 5.pdb
+C:\Users\Jose Lobos\Source\Repos\Parcial\semana 7\Tarea con colores 5\bin\Debug\Database1.mdb
+C:\Users\Jose Lobos\Source\Repos\Parcial\semana 7\Tarea con colores 5\bin\Debug\Tarea con colores 5.exe.config
+C:\Users\Jose Lobos\Source\Repos\Parcial\semana 7\Tarea con colores 5\bin\Debug\Tarea con colores 5.exe
+C:\Users\Jose Lobos\Source\Repos\Parcial\semana 7\Tarea con colores 5\bin\Debug\Tarea con colores 5.pdb
+C:\Users\Jose Lobos\Source\Repos\Parcial\semana 7\Tarea con colores 5\bin\Debug\MySql.Data.dll
+C:\Users\Jose Lobos\Source\Repos\Parcial\semana 7\Tarea con colores 5\bin\Debug\Google.Protobuf.dll
+C:\Users\Jose Lobos\Source\Repos\Parcial\semana 7\Tarea con colores 5\obj\Debug\Tarea con colores 5.csproj.AssemblyReference.cache
+C:\Users\Jose Lobos\Source\Repos\Parcial\semana 7\Tarea con colores 5\obj\Debug\Tarea_con_colores_5.AboutBox1.resources
+C:\Users\Jose Lobos\Source\Repos\Parcial\semana 7\Tarea con colores 5\obj\Debug\Tarea_con_colores_5.fempleados.resources
+C:\Users\Jose Lobos\Source\Repos\Parcial\semana 7\Tarea con colores 5\obj\Debug\Tarea_con_colores_5.fLogin.resources
+C:\Users\Jose Lobos\Source\Repos\Parcial\semana 7\Tarea con colores 5\obj\Debug\Tarea_con_colores_5.Computadoras.resources
+C:\Users\Jose Lobos\Source\Repos\Parcial\semana 7\Tarea con colores 5\obj\Debug\Tarea_con_colores_5.formadmin.resources
+C:\Users\Jose Lobos\Source\Repos\Parcial\semana 7\Tarea con colores 5\obj\Debug\Tarea_con_colores_5.fregistro.resources
+C:\Users\Jose Lobos\Source\Repos\Parcial\semana 7\Tarea con colores 5\obj\Debug\Tarea_con_colores_5.frmestandar.resources
+C:\Users\Jose Lobos\Source\Repos\Parcial\semana 7\Tarea con colores 5\obj\Debug\Tarea_con_colores_5.fusuario.resources
+C:\Users\Jose Lobos\Source\Repos\Parcial\semana 7\Tarea con colores 5\obj\Debug\Tarea_con_colores_5.Integrantes.resources
+C:\Users\Jose Lobos\Source\Repos\Parcial\semana 7\Tarea con colores 5\obj\Debug\Tarea_con_colores_5.Menú.resources
+C:\Users\Jose Lobos\Source\Repos\Parcial\semana 7\Tarea con colores 5\obj\Debug\Tarea_con_colores_5.Laptops.resources
+C:\Users\Jose Lobos\Source\Repos\Parcial\semana 7\Tarea con colores 5\obj\Debug\Tarea_con_colores_5.Celulares.resources
+C:\Users\Jose Lobos\Source\Repos\Parcial\semana 7\Tarea con colores 5\obj\Debug\Tarea_con_colores_5.Ventas.resources
+C:\Users\Jose Lobos\Source\Repos\Parcial\semana 7\Tarea con colores 5\obj\Debug\Tarea_con_colores_5.Ayuda2.resources
+C:\Users\Jose Lobos\Source\Repos\Parcial\semana 7\Tarea con colores 5\obj\Debug\Tarea_con_colores_5.Ayuda.resources
+C:\Users\Jose Lobos\Source\Repos\Parcial\semana 7\Tarea con colores 5\obj\Debug\Tarea_con_colores_5.Properties.Resources.resources
+C:\Users\Jose Lobos\Source\Repos\Parcial\semana 7\Tarea con colores 5\obj\Debug\Tarea con colores 5.csproj.GenerateResource.cache
+C:\Users\Jose Lobos\Source\Repos\Parcial\semana 7\Tarea con colores 5\obj\Debug\Tarea con colores 5.csproj.CoreCompileInputs.cache
+C:\Users\Jose Lobos\Source\Repos\Parcial\semana 7\Tarea con colores 5\obj\Debug\Tarea con colores 5.csproj.CopyComplete
+C:\Users\Jose Lobos\Source\Repos\Parcial\semana 7\Tarea con colores 5\obj\Debug\Tarea con colores 5.exe
+C:\Users\Jose Lobos\Source\Repos\Parcial\semana 7\Tarea con colores 5\obj\Debug\Tarea con colores 5.pdb
