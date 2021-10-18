@@ -155,6 +155,11 @@ namespace Tarea_con_colores_5
         {
             fregistro fm = new fregistro(); fm.Show();
         }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            fempleados fm = new fempleados(); fm.Show();
+        }
     }
 }
 

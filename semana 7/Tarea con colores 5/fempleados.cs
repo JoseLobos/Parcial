@@ -58,39 +58,40 @@ namespace Tarea_con_colores_5
         private void button1_Click(object sender, EventArgs e)
         {
             cn.Open();
-            string insertar = "INSERT INTO empleado (ID EMPLEADO,NOMBRES,APELLIDOS,CELULAR,CORREO,SEXO)values(@id empleado,@nombres,@apellidos,@celular,@correo,,@sexo)";
+            string insertar = "INSERT INTO empleado (ID,NOMBRES,APELLIDOS,CELULAR,CORREO,SEXO,FECHA_DE_NACIMIENTO)values(@id,@nombres,@apellidos,@celular,@correo,@sexo,@fecha_de_nacimiento)";
             MySqlCommand cmd = new MySqlCommand(insertar, cn);
 
-            cmd.Parameters.AddWithValue("@id empleado", textBox1.Text);
+            cmd.Parameters.AddWithValue("@id", textBox1.Text);
             cmd.Parameters.AddWithValue("@nombres", textBox2.Text);
             cmd.Parameters.AddWithValue("@apellidos", textBox3.Text);
             cmd.Parameters.AddWithValue("@celular", textBox4.Text);
             cmd.Parameters.AddWithValue("@correo", textBox5.Text);
-             cmd.Parameters.AddWithValue("@sexo", comboBox2.Text);
+            cmd.Parameters.AddWithValue("@sexo", comboBox2.Text);
+            cmd.Parameters.AddWithValue("@fecha_de_nacimiento", textBox7.Text);
             cmd.ExecuteNonQuery();
 
             cn.Close();
-            MessageBox.Show("El empleado ah sido agregado con exito");
+            MessageBox.Show("El usuario ah sido agregado con exito");
             dataGridView1.DataSource = llenar_grid();
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
             cn.Open();
-            string actualizar = "UPDATE empleado SET ID EMPLEADO=@id empleado,NOMBRES=@nombres,APELLIDOS=@apellidos,CELULAR=@celular,CORREO=@correo,SEXO=@sexo WHERE CODIGO=@id empleado";
+            string actualizar = "UPDATE empleado SET ID=@id,NOMBRES=@nombres,APELLIDOS=@apellidos,CELULAR=@celular,CORREO=@correo,SEXO=@sexo,FECHA_DE_NACIMIENTO=@fecha_de_nacimiento WHERE ID=@id";
             MySqlCommand cmd = new MySqlCommand(actualizar, cn);
 
-            cmd.Parameters.AddWithValue("@id empleado", textBox1.Text);
+            cmd.Parameters.AddWithValue("@id", textBox1.Text);
             cmd.Parameters.AddWithValue("@nombres", textBox2.Text);
             cmd.Parameters.AddWithValue("@apellidos", textBox3.Text);
             cmd.Parameters.AddWithValue("@celular", textBox4.Text);
             cmd.Parameters.AddWithValue("@correo", textBox5.Text);
-            
             cmd.Parameters.AddWithValue("@sexo", comboBox2.Text);
+            cmd.Parameters.AddWithValue("@fecha_de_nacimiento", textBox7.Text);
             cmd.ExecuteNonQuery();
 
             cn.Close();
-            MessageBox.Show("El empleado ah sido modificado con exito");
+            MessageBox.Show("El usuario ah sido modificado con exito");
             dataGridView1.DataSource = llenar_grid();
         }
 
@@ -103,8 +104,8 @@ namespace Tarea_con_colores_5
                 textBox3.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
                 textBox4.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
                 textBox5.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
-                textBox7.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
-                comboBox2.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
+                textBox7.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
+                comboBox2.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
             }
             catch
             {
@@ -114,10 +115,10 @@ namespace Tarea_con_colores_5
         private void button6_Click(object sender, EventArgs e)
         {
             cn.Open();
-            string eliminar = "DELETE FROM empleado WHERE ID EMPLEADO=@ID EMPLEADO";
+            string eliminar = "DELETE FROM empleado WHERE ID=@ID";
             MySqlCommand cmd = new MySqlCommand(eliminar, cn);
 
-            cmd.Parameters.AddWithValue("@Id Empleado", textBox1.Text);
+            cmd.Parameters.AddWithValue("@Id", textBox1.Text);
             cmd.ExecuteNonQuery();
             cn.Close();
             MessageBox.Show(" El empleado fue eliminado  con exito");
@@ -171,7 +172,7 @@ namespace Tarea_con_colores_5
 
             {
 
-                string consulta = "Select * from empleado where Id Empleado='" + textBox6.Text + "'";
+                string consulta = "Select * from empleado where Id ='" + textBox6.Text + "'";
 
                 MySqlConnection con = new MySqlConnection(connectionstring);
 
