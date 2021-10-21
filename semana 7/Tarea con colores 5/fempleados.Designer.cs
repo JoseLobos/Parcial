@@ -58,6 +58,10 @@ namespace Tarea_con_colores_5
             this.label9 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button9 = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -69,7 +73,7 @@ namespace Tarea_con_colores_5
             this.pictureBox1.Image = global::Tarea_con_colores_5.Properties.Resources._560216;
             this.pictureBox1.Location = new System.Drawing.Point(1, 37);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(211, 155);
+            this.pictureBox1.Size = new System.Drawing.Size(211, 215);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
@@ -78,7 +82,7 @@ namespace Tarea_con_colores_5
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(225, -1);
+            this.label1.Location = new System.Drawing.Point(217, 2);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(382, 20);
             this.label1.TabIndex = 9;
@@ -109,15 +113,15 @@ namespace Tarea_con_colores_5
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(1, 272);
+            this.dataGridView1.Location = new System.Drawing.Point(1, 336);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(887, 177);
+            this.dataGridView1.Size = new System.Drawing.Size(887, 113);
             this.dataGridView1.TabIndex = 29;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(8, 246);
+            this.textBox6.Location = new System.Drawing.Point(12, 307);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(186, 20);
             this.textBox6.TabIndex = 30;
@@ -125,7 +129,7 @@ namespace Tarea_con_colores_5
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.PowderBlue;
-            this.button2.Location = new System.Drawing.Point(204, 239);
+            this.button2.Location = new System.Drawing.Point(221, 303);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(87, 27);
             this.button2.TabIndex = 31;
@@ -136,7 +140,7 @@ namespace Tarea_con_colores_5
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(242, 22);
+            this.label2.Location = new System.Drawing.Point(244, 22);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(66, 13);
             this.label2.TabIndex = 33;
@@ -154,7 +158,7 @@ namespace Tarea_con_colores_5
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(243, 74);
+            this.label4.Location = new System.Drawing.Point(244, 75);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(49, 13);
             this.label4.TabIndex = 35;
@@ -163,25 +167,25 @@ namespace Tarea_con_colores_5
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(243, 101);
+            this.label5.Location = new System.Drawing.Point(242, 129);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(39, 13);
+            this.label5.Size = new System.Drawing.Size(49, 13);
             this.label5.TabIndex = 36;
-            this.label5.Text = "Celular";
+            this.label5.Text = "Telefono";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(244, 129);
+            this.label6.Location = new System.Drawing.Point(244, 160);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(38, 13);
+            this.label6.Size = new System.Drawing.Size(52, 13);
             this.label6.TabIndex = 37;
-            this.label6.Text = "Correo";
+            this.label6.Text = "Direccion";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(242, 155);
+            this.label7.Location = new System.Drawing.Point(242, 103);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(108, 13);
             this.label7.TabIndex = 38;
@@ -190,7 +194,7 @@ namespace Tarea_con_colores_5
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(243, 185);
+            this.label8.Location = new System.Drawing.Point(244, 185);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(31, 13);
             this.label8.TabIndex = 39;
@@ -198,7 +202,7 @@ namespace Tarea_con_colores_5
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(369, 22);
+            this.textBox1.Location = new System.Drawing.Point(369, 23);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(156, 20);
             this.textBox1.TabIndex = 40;
@@ -219,7 +223,7 @@ namespace Tarea_con_colores_5
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(369, 101);
+            this.textBox4.Location = new System.Drawing.Point(369, 103);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(156, 20);
             this.textBox4.TabIndex = 43;
@@ -233,7 +237,7 @@ namespace Tarea_con_colores_5
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(369, 155);
+            this.textBox7.Location = new System.Drawing.Point(369, 160);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(156, 20);
             this.textBox7.TabIndex = 45;
@@ -308,7 +312,7 @@ namespace Tarea_con_colores_5
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(242, 212);
+            this.label9.Location = new System.Drawing.Point(244, 212);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(35, 13);
             this.label9.TabIndex = 52;
@@ -338,11 +342,48 @@ namespace Tarea_con_colores_5
             this.button9.UseVisualStyleBackColor = false;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(244, 239);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(40, 13);
+            this.label10.TabIndex = 55;
+            this.label10.Text = "Sueldo";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(244, 265);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(78, 13);
+            this.label11.TabIndex = 56;
+            this.label11.Text = "Observaciones";
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(372, 239);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(156, 20);
+            this.textBox8.TabIndex = 57;
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(369, 265);
+            this.textBox9.Multiline = true;
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(156, 52);
+            this.textBox9.TabIndex = 58;
+            // 
             // fempleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(900, 490);
+            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label9);
@@ -413,5 +454,9 @@ namespace Tarea_con_colores_5
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox textBox9;
     }
 }
