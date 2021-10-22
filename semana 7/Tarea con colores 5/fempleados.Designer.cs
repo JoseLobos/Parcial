@@ -204,42 +204,42 @@ namespace Tarea_con_colores_5
             // 
             this.textBox1.Location = new System.Drawing.Point(369, 23);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(156, 20);
+            this.textBox1.Size = new System.Drawing.Size(195, 20);
             this.textBox1.TabIndex = 40;
             // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(369, 49);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(156, 20);
+            this.textBox2.Size = new System.Drawing.Size(195, 20);
             this.textBox2.TabIndex = 41;
             // 
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(369, 75);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(156, 20);
+            this.textBox3.Size = new System.Drawing.Size(195, 20);
             this.textBox3.TabIndex = 42;
             // 
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(369, 103);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(156, 20);
+            this.textBox4.Size = new System.Drawing.Size(195, 20);
             this.textBox4.TabIndex = 43;
             // 
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(369, 129);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(156, 20);
+            this.textBox5.Size = new System.Drawing.Size(195, 20);
             this.textBox5.TabIndex = 44;
             // 
             // textBox7
             // 
             this.textBox7.Location = new System.Drawing.Point(369, 160);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(156, 20);
+            this.textBox7.Size = new System.Drawing.Size(195, 20);
             this.textBox7.TabIndex = 45;
             // 
             // comboBox2
@@ -251,7 +251,7 @@ namespace Tarea_con_colores_5
             this.comboBox2.Location = new System.Drawing.Point(369, 185);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(156, 21);
+            this.comboBox2.Size = new System.Drawing.Size(195, 21);
             this.comboBox2.TabIndex = 46;
             // 
             // button1
@@ -314,21 +314,24 @@ namespace Tarea_con_colores_5
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(244, 212);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(35, 13);
+            this.label9.Size = new System.Drawing.Size(90, 13);
             this.label9.TabIndex = 52;
-            this.label9.Text = "Cargo";
+            this.label9.Text = "Puesto de trabajo";
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "Gerente",
-            "Vendedor",
-            "Cajero"});
+            "Direccion Administrativa",
+            "Departamento Financiero",
+            "Departamento de Venta",
+            "Departamento de Asistencia Tecnica",
+            "Departamento de Bodega",
+            "Departamento de Ensamblaje"});
             this.comboBox1.Location = new System.Drawing.Point(369, 212);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(156, 21);
+            this.comboBox1.Size = new System.Drawing.Size(195, 21);
             this.comboBox1.TabIndex = 53;
             // 
             // button9
@@ -364,7 +367,7 @@ namespace Tarea_con_colores_5
             // 
             this.textBox8.Location = new System.Drawing.Point(369, 238);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(156, 20);
+            this.textBox8.Size = new System.Drawing.Size(195, 20);
             this.textBox8.TabIndex = 57;
             // 
             // textBox9
@@ -372,7 +375,7 @@ namespace Tarea_con_colores_5
             this.textBox9.Location = new System.Drawing.Point(369, 265);
             this.textBox9.Multiline = true;
             this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(156, 52);
+            this.textBox9.Size = new System.Drawing.Size(195, 52);
             this.textBox9.TabIndex = 58;
             // 
             // fempleados

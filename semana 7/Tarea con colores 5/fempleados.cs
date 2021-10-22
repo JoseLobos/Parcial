@@ -67,7 +67,7 @@ namespace Tarea_con_colores_5
         private void button1_Click(object sender, EventArgs e)
         {
             cn.Open();
-            string insertar = "INSERT INTO empleado (ID_EMPLEADO,NOMBRES,APELLIDOS,FECHA_DE_NACIMIENTO,TELEFONO,DIRECCION,SEXO,CARGO,SUELDO,OBSERVACIONES)values(@id_empleado,@nombres,@apellidos,@fecha_de_nacimiento,@telefono,@direccion,@sexo,@cargo,@sueldo,@observaciones)";
+            string insertar = "INSERT INTO empleado (ID_EMPLEADO,NOMBRES,APELLIDOS,FECHA_DE_NACIMIENTO,TELEFONO,DIRECCION,SEXO,PUESTO_DE_TRABAJO,SUELDO,OBSERVACIONES)values(@id_empleado,@nombres,@apellidos,@fecha_de_nacimiento,@telefono,@direccion,@sexo,@puesto_de_trabajo,@sueldo,@observaciones)";
             MySqlCommand cmd = new MySqlCommand(insertar, cn);
 
             cmd.Parameters.AddWithValue("@id_empleado", textBox1.Text);
@@ -77,7 +77,7 @@ namespace Tarea_con_colores_5
             cmd.Parameters.AddWithValue("@telefono", textBox5.Text);
             cmd.Parameters.AddWithValue("@direccion", textBox7.Text);
             cmd.Parameters.AddWithValue("@sexo", comboBox2.Text);
-            cmd.Parameters.AddWithValue("@cargo", comboBox1.Text);
+            cmd.Parameters.AddWithValue("@puesto_de_trabajo", comboBox1.Text);
             cmd.Parameters.AddWithValue("@sueldo", textBox8.Text);
             cmd.Parameters.AddWithValue("@observaciones", textBox9.Text);
             cmd.ExecuteNonQuery();
@@ -108,7 +108,7 @@ namespace Tarea_con_colores_5
             textBox8.Text = "";
             textBox9.Text = "";
             comboBox2.Text = "Seleccione el sexo";
-            comboBox1.Text = "Seleccione el cargo";
+            comboBox1.Text = "Seleccione el puesto de trabajo";
             textBox1.Focus();
             button5.Visible = false;
             button1.Visible = false;
@@ -171,7 +171,7 @@ namespace Tarea_con_colores_5
             textBox8.Text = "";
             textBox9.Text = "";
             comboBox2.Text = "Seleccione el sexo";
-            comboBox1.Text = "Seleccione el cargo";
+            comboBox1.Text = "Seleccione el puesto de trabajo";
             textBox1.Focus();
             button5.Visible = false;
             button6.Visible = false;
@@ -250,7 +250,7 @@ namespace Tarea_con_colores_5
         private void button9_Click(object sender, EventArgs e)
         {
             cn.Open();
-            string actualizar = "UPDATE empleado SET ID_EMPLEADO=@id_empleado,NOMBRES=@nombres,APELLIDOS=@apellidos,FECHA_DE_NACIMIENTO=@fecha_de_nacimiento,TELEFONO=@telefono,DIRECCION=@direccion,SEXO=@sexo,CARGO=@cargo,SUELDO=@sueldo,OBSERVACIONES=@observaciones WHERE ID_EMPLEADO=@id_empleado";
+            string actualizar = "UPDATE empleado SET ID_EMPLEADO=@id_empleado,NOMBRES=@nombres,APELLIDOS=@apellidos,FECHA_DE_NACIMIENTO=@fecha_de_nacimiento,TELEFONO=@telefono,DIRECCION=@direccion,SEXO=@sexo,PUESTO_DE_TRABAJO=@puesto_de_trabajo,SUELDO=@sueldo,OBSERVACIONES=@observaciones WHERE ID_EMPLEADO=@id_empleado";
             MySqlCommand cmd = new MySqlCommand(actualizar, cn);
 
             cmd.Parameters.AddWithValue("@id_empleado", textBox1.Text);
@@ -260,7 +260,7 @@ namespace Tarea_con_colores_5
             cmd.Parameters.AddWithValue("@telefono", textBox5.Text);
             cmd.Parameters.AddWithValue("@direccion", textBox7.Text);
             cmd.Parameters.AddWithValue("@sexo", comboBox2.Text);
-            cmd.Parameters.AddWithValue("@cargo", comboBox1.Text);
+            cmd.Parameters.AddWithValue("@puesto_de_trabajo", comboBox1.Text);
             cmd.Parameters.AddWithValue("@sueldo", textBox8.Text);
             cmd.Parameters.AddWithValue("@observaciones", textBox9.Text);
             cmd.ExecuteNonQuery();
