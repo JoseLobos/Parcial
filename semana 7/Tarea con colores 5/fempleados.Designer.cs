@@ -362,7 +362,7 @@ namespace Tarea_con_colores_5
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(372, 239);
+            this.textBox8.Location = new System.Drawing.Point(369, 238);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(156, 20);
             this.textBox8.TabIndex = 57;
