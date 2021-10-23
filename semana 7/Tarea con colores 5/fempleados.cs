@@ -43,8 +43,14 @@ namespace Tarea_con_colores_5
             textBox8.Clear();
             textBox9.Clear();
             textBox6.Clear();
+            textBox10.Clear();
+            textBox11.Clear();
+            textBox12.Clear();
+            textBox13.Clear();
+            textBox14.Clear();
             this.comboBox2.Text = "";
             this.comboBox1.Text = "";
+            this.comboBox3.Text = "";
         }
 
         private void fempleados_Load(object sender, EventArgs e)
@@ -67,7 +73,7 @@ namespace Tarea_con_colores_5
         private void button1_Click(object sender, EventArgs e)
         {
             cn.Open();
-            string insertar = "INSERT INTO empleado (ID_EMPLEADO,NOMBRES,APELLIDOS,FECHA_DE_NACIMIENTO,TELEFONO,DIRECCION,SEXO,PUESTO_DE_TRABAJO,SUELDO,OBSERVACIONES)values(@id_empleado,@nombres,@apellidos,@fecha_de_nacimiento,@telefono,@direccion,@sexo,@puesto_de_trabajo,@sueldo,@observaciones)";
+            string insertar = "INSERT INTO empleado (ID_EMPLEADO,NOMBRES,APELLIDOS,FECHA_DE_NACIMIENTO,TELEFONO,DIRECCION,GENERO,DEPARTAMENTO_LABORAL,SUELDO,OBSERVACIONES,CORREO,NUMERO_DE_DUI,NUMERO_DE_NIT,NUMERO_DE_AFP,FECHA_DE_INGRESO,JEFATURA)values(@id_empleado,@nombres,@apellidos,@fecha_de_nacimiento,@telefono,@direccion,@genero,@departamento_laboral,@sueldo,@observaciones,@correo,@numero_de_dui,@numero_de_nit,@numero_de_afp,@fecha_de_ingreso,@jefatura)";
             MySqlCommand cmd = new MySqlCommand(insertar, cn);
 
             cmd.Parameters.AddWithValue("@id_empleado", textBox1.Text);
@@ -76,10 +82,17 @@ namespace Tarea_con_colores_5
             cmd.Parameters.AddWithValue("@fecha_de_nacimiento", textBox4.Text);
             cmd.Parameters.AddWithValue("@telefono", textBox5.Text);
             cmd.Parameters.AddWithValue("@direccion", textBox7.Text);
-            cmd.Parameters.AddWithValue("@sexo", comboBox2.Text);
-            cmd.Parameters.AddWithValue("@puesto_de_trabajo", comboBox1.Text);
+            cmd.Parameters.AddWithValue("@genero", comboBox2.Text);
+            cmd.Parameters.AddWithValue("@departamento_laboral", comboBox1.Text);
             cmd.Parameters.AddWithValue("@sueldo", textBox8.Text);
             cmd.Parameters.AddWithValue("@observaciones", textBox9.Text);
+            cmd.Parameters.AddWithValue("@correo", textBox10.Text);
+            cmd.Parameters.AddWithValue("@numero_de_dui", textBox11.Text);
+            cmd.Parameters.AddWithValue("@numero_de_nit", textBox12.Text);
+            cmd.Parameters.AddWithValue("@numero_de_afp", textBox13.Text);
+            cmd.Parameters.AddWithValue("@fecha_de_ingreso", textBox14.Text);
+            cmd.Parameters.AddWithValue("@jefatura", comboBox3.Text);
+
             cmd.ExecuteNonQuery();
 
             cn.Close();
@@ -98,7 +111,13 @@ namespace Tarea_con_colores_5
             textBox8.Enabled = true;
             textBox9.Enabled = true;
             comboBox2.Enabled = true;
-            comboBox1.Enabled = true;
+            comboBox1.Enabled = true; 
+            textBox10.Clear();
+            textBox11.Clear();
+            textBox12.Clear();
+            textBox13.Clear();
+            textBox14.Clear();
+            comboBox3.Enabled = true;
             textBox1.Text = "";
             textBox2.Text = "";
             textBox3.Text = "";
@@ -107,9 +126,16 @@ namespace Tarea_con_colores_5
             textBox7.Text = "";
             textBox8.Text = "";
             textBox9.Text = "";
+            textBox10.Text = "";
+            textBox11.Text = "";
+            textBox12.Text = "";
+            textBox13.Text = "";
+            textBox14.Text = "";
             comboBox2.Text = "Seleccione el sexo";
             comboBox1.Text = "Seleccione el puesto de trabajo";
+            comboBox3.Text = "Seleccione el Jefe";
             textBox1.Focus();
+            textBox2.Focus();
             button5.Visible = false;
             button1.Visible = false;
             button6.Visible = false;
@@ -131,6 +157,14 @@ namespace Tarea_con_colores_5
                 comboBox1.Text = dataGridView1.CurrentRow.Cells[7].Value.ToString();
                 textBox8.Text = dataGridView1.CurrentRow.Cells[8].Value.ToString();
                 textBox9.Text = dataGridView1.CurrentRow.Cells[9].Value.ToString();
+                textBox10.Text = dataGridView1.CurrentRow.Cells[10].Value.ToString();
+                textBox11.Text = dataGridView1.CurrentRow.Cells[11].Value.ToString();
+                textBox12.Text = dataGridView1.CurrentRow.Cells[12].Value.ToString();
+                textBox13.Text = dataGridView1.CurrentRow.Cells[13].Value.ToString();
+                textBox14.Text = dataGridView1.CurrentRow.Cells[14].Value.ToString();
+                comboBox3.Text = dataGridView1.CurrentRow.Cells[15].Value.ToString();
+
+
             }
             catch
             {
@@ -160,7 +194,13 @@ namespace Tarea_con_colores_5
             textBox7.Enabled = true;
             textBox8.Enabled = true;
             textBox9.Enabled = true;
+            textBox10.Enabled = true;
+            textBox11.Enabled = true;
+            textBox12.Enabled = true;
+            textBox13.Enabled = true;
+            textBox14.Enabled = true;
             comboBox2.Enabled = true;
+            comboBox3.Enabled = true;
             comboBox1.Enabled = true;
             textBox1.Text = "";
             textBox2.Text = "";
@@ -170,8 +210,14 @@ namespace Tarea_con_colores_5
             textBox7.Text = "";
             textBox8.Text = "";
             textBox9.Text = "";
+            textBox10.Text = "";
+            textBox11.Text = "";
+            textBox12.Text = "";
+            textBox13.Text = "";
+            textBox14.Text = "";
             comboBox2.Text = "Seleccione el sexo";
             comboBox1.Text = "Seleccione el puesto de trabajo";
+            comboBox3.Text = "Seleccione el Jefe";
             textBox1.Focus();
             button5.Visible = false;
             button6.Visible = false;
@@ -184,6 +230,7 @@ namespace Tarea_con_colores_5
         private void button8_Click(object sender, EventArgs e)
         {
             this.Close();
+            Menú fm = new Menú(); fm.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -195,11 +242,17 @@ namespace Tarea_con_colores_5
             textBox7.Clear();
             this.comboBox2.Text = "";
             this.comboBox1.Text = "";
+            this.comboBox3.Text = "";
             comboBox1.Select();
             textBox4.Clear();
             textBox7.Clear();
             textBox8.Clear();
             textBox9.Clear();
+            textBox10.Clear();
+            textBox11.Clear();
+            textBox12.Clear();
+            textBox13.Clear();
+            textBox14.Clear();
         }
         private void button3_Click_1(object sender, EventArgs e)
         {
@@ -250,7 +303,7 @@ namespace Tarea_con_colores_5
         private void button9_Click(object sender, EventArgs e)
         {
             cn.Open();
-            string actualizar = "UPDATE empleado SET ID_EMPLEADO=@id_empleado,NOMBRES=@nombres,APELLIDOS=@apellidos,FECHA_DE_NACIMIENTO=@fecha_de_nacimiento,TELEFONO=@telefono,DIRECCION=@direccion,SEXO=@sexo,PUESTO_DE_TRABAJO=@puesto_de_trabajo,SUELDO=@sueldo,OBSERVACIONES=@observaciones WHERE ID_EMPLEADO=@id_empleado";
+            string actualizar = "UPDATE empleado SET ID_EMPLEADO=@id_empleado,NOMBRES=@nombres,APELLIDOS=@apellidos,FECHA_DE_NACIMIENTO=@fecha_de_nacimiento,TELEFONO=@telefono,DIRECCION=@direccion,GENERO=@genero,DEPARTAMENTO_LABORAL=@departamento_laboral,SUELDO=@sueldo,OBSERVACIONES=@observaciones,CORREO=@correo,NUMERO_DE_DUI=@numero_de_dui,NUMERO_DE_NIT=@numero_de_nit,NUMERO_DE_AFP=@numero_de_afp,FECHA_DE_INGRESO=@fecha_de_ingreso,JEFATURA=@jefatura WHERE ID_EMPLEADO=@id_empleado";
             MySqlCommand cmd = new MySqlCommand(actualizar, cn);
 
             cmd.Parameters.AddWithValue("@id_empleado", textBox1.Text);
@@ -259,15 +312,27 @@ namespace Tarea_con_colores_5
             cmd.Parameters.AddWithValue("@fecha_de_nacimiento", textBox4.Text);
             cmd.Parameters.AddWithValue("@telefono", textBox5.Text);
             cmd.Parameters.AddWithValue("@direccion", textBox7.Text);
-            cmd.Parameters.AddWithValue("@sexo", comboBox2.Text);
-            cmd.Parameters.AddWithValue("@puesto_de_trabajo", comboBox1.Text);
+            cmd.Parameters.AddWithValue("@genero", comboBox2.Text);
+            cmd.Parameters.AddWithValue("@departamento_laboral", comboBox1.Text);
             cmd.Parameters.AddWithValue("@sueldo", textBox8.Text);
             cmd.Parameters.AddWithValue("@observaciones", textBox9.Text);
+            cmd.Parameters.AddWithValue("@correo", textBox10.Text);
+            cmd.Parameters.AddWithValue("@numero_de_dui", textBox11.Text);
+            cmd.Parameters.AddWithValue("@numero_de_nit", textBox12.Text);
+            cmd.Parameters.AddWithValue("@numero_de_afp", textBox13.Text);
+            cmd.Parameters.AddWithValue("@fecha_de_ingreso", textBox14.Text);
+            cmd.Parameters.AddWithValue("@jefatura", comboBox3.Text);
+
             cmd.ExecuteNonQuery();
 
             cn.Close();
             MessageBox.Show("El empleado ah sido modificado con exito");
             dataGridView1.DataSource = llenar_grid();
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

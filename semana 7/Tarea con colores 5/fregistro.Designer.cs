@@ -51,7 +51,6 @@ namespace Tarea_con_colores_5
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.button8 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -263,17 +262,6 @@ namespace Tarea_con_colores_5
             this.button8.UseVisualStyleBackColor = false;
             this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
-            // button11
-            // 
-            this.button11.BackColor = System.Drawing.Color.PowderBlue;
-            this.button11.Location = new System.Drawing.Point(246, 351);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(87, 27);
-            this.button11.TabIndex = 39;
-            this.button11.Text = "Ingresar";
-            this.button11.UseVisualStyleBackColor = false;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
-            // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.PowderBlue;
@@ -288,9 +276,9 @@ namespace Tarea_con_colores_5
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.PowderBlue;
-            this.button4.Location = new System.Drawing.Point(350, 355);
+            this.button4.Location = new System.Drawing.Point(246, 351);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.Size = new System.Drawing.Size(87, 23);
             this.button4.TabIndex = 41;
             this.button4.Text = "Cancelar";
             this.button4.UseVisualStyleBackColor = false;
@@ -304,7 +292,6 @@ namespace Tarea_con_colores_5
             this.ClientSize = new System.Drawing.Size(866, 402);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button11);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -361,7 +348,6 @@ namespace Tarea_con_colores_5
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
     }

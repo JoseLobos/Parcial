@@ -459,3 +459,5 @@ C:\Users\Jose Lobos\Source\Repos\Parcial\semana 7\Tarea con colores 5\obj\Debug\
 C:\Users\Jose Lobos\Source\Repos\Parcial\semana 7\Tarea con colores 5\obj\Debug\Tarea con colores 5.csproj.CopyComplete
 C:\Users\Jose Lobos\Source\Repos\Parcial\semana 7\Tarea con colores 5\obj\Debug\Tarea con colores 5.exe
 C:\Users\Jose Lobos\Source\Repos\Parcial\semana 7\Tarea con colores 5\obj\Debug\Tarea con colores 5.pdb
+C:\Users\Jose Lobos\Source\Repos\Parcial\semana 7\Tarea con colores 5\obj\Debug\Tarea_con_colores_5.Fconsultaempleado.resources
+C:\Users\Jose Lobos\Source\Repos\Parcial\semana 7\Tarea con colores 5\obj\Debug\Tarea_con_colores_5.Fconsultausuario.resources

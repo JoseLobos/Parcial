@@ -131,7 +131,7 @@ namespace Tarea_con_colores_5
                         {
                             try
                             {
-                                fregistro fm = new fregistro(); fm.Show();
+                                Menú fm = new Menú(); fm.Show();
                             }
                             catch (MySqlException k)
                             {
