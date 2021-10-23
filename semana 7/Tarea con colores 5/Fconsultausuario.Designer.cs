@@ -39,7 +39,7 @@ namespace Tarea_con_colores_5
             // 
             // dataGridView1
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLight;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(4, 144);
             this.dataGridView1.Name = "dataGridView1";
@@ -49,9 +49,9 @@ namespace Tarea_con_colores_5
             // 
             // button8
             // 
-            this.button8.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(766, 93);
+            this.button8.BackColor = System.Drawing.Color.Lavender;
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.Location = new System.Drawing.Point(797, 96);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(87, 27);
             this.button8.TabIndex = 51;
@@ -61,7 +61,8 @@ namespace Tarea_con_colores_5
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.PowderBlue;
+            this.button2.BackColor = System.Drawing.Color.Lavender;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(262, 93);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(87, 27);
@@ -72,7 +73,7 @@ namespace Tarea_con_colores_5
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(49, 93);
+            this.textBox6.Location = new System.Drawing.Point(49, 100);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(186, 20);
             this.textBox6.TabIndex = 53;
@@ -91,6 +92,7 @@ namespace Tarea_con_colores_5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Blue;
             this.ClientSize = new System.Drawing.Size(896, 458);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox6);

@@ -39,7 +39,7 @@ namespace Tarea_con_colores_5
             // 
             // dataGridView1
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLight;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(12, 107);
             this.dataGridView1.Name = "dataGridView1";
@@ -59,17 +59,18 @@ namespace Tarea_con_colores_5
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(66, 66);
+            this.textBox6.Location = new System.Drawing.Point(97, 63);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(186, 20);
+            this.textBox6.Size = new System.Drawing.Size(188, 20);
             this.textBox6.TabIndex = 32;
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.PowderBlue;
-            this.button2.Location = new System.Drawing.Point(291, 66);
+            this.button2.BackColor = System.Drawing.Color.Silver;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(291, 59);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(87, 27);
+            this.button2.Size = new System.Drawing.Size(82, 27);
             this.button2.TabIndex = 33;
             this.button2.Text = "Buscar";
             this.button2.UseVisualStyleBackColor = false;
@@ -77,9 +78,9 @@ namespace Tarea_con_colores_5
             // 
             // button8
             // 
-            this.button8.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(666, 62);
+            this.button8.BackColor = System.Drawing.Color.Silver;
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.Location = new System.Drawing.Point(775, 59);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(87, 27);
             this.button8.TabIndex = 50;
@@ -91,6 +92,7 @@ namespace Tarea_con_colores_5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Blue;
             this.ClientSize = new System.Drawing.Size(892, 458);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button2);
