@@ -131,7 +131,8 @@ namespace Tarea_con_colores_5
                         {
                             try
                             {
-                                Menú fm = new Menú(); fm.Show();
+                                Form Menú = new Menú();
+                                Menú.Show();
                             }
                             catch (MySqlException k)
                             {
